@@ -1,0 +1,103 @@
+<!-- FoodMenu - Workbook4, Section 3-16 -->
+<style>
+    body {
+        color:blanchedalmond;
+        background-color: rgb(0,0,96);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    #menu {
+        vertical-align: middle;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        justify-items:flex-start;
+    }
+
+    select.naked {
+        background: none;
+        overflow-y: visible;
+        border: none;
+        font-size: 3vh;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .inline {
+        display: inline-flex;
+        width: auto;
+        vertical-align: middle;
+    }
+
+    option.big-target {
+        border-radius: 1em;
+        box-shadow: 0.125em 0.125em;
+        border: 0.125em solid white;
+        margin: 1em;
+        width: 8em;
+        height: 5em;
+        display: flex;
+        background: rgb(54, 218, 32);
+        color: darkblue;
+        justify-content: center;
+        align-items: center;
+    }
+
+    option.big-target {
+        background: darkblue !important;
+        color: rgb(54, 218, 32);
+    }
+</style>
+
+<body>
+    <div id="menu">
+        <select size="3" class="naked inline">
+            <option value="drinks" class="big-target">
+                Drinks
+            </option>
+            <option value="entrees" class="big-target">
+                Entrees
+            </option>
+            <option value="desserts" class="big-target">
+                Desserts
+            </option>
+        </select>
+        <div id="results" class="inline">
+            Results Here
+        </div>
+    </div>
+</body>
+<script>
+    let menu = {
+        drinks: [
+            "Water",
+            "Tea",
+            "Sweet Tea",
+            "Coke",
+            "Dr. Pepper",
+            "Sprite"
+        ],
+        entrees: [
+            "Hamburger w/ Fries",
+            "Grilled Cheese w/ Tater Tots",
+            "Grilled Chicken w/ Veggies",
+            "Chicken Fried Steak w/ Mashed Potatoes",
+            "Fried Shrimp w/ Coleslaw",
+            "Veggie Plate"
+        ],
+        desserts: [
+            "Cheesecake",
+            "Chocolate Cake",
+            "Snickerdoodle Cookie"
+        ]
+    };
+</script>

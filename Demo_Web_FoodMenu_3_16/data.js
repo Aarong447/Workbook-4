@@ -1,0 +1,19 @@
+let data = [
+    {
+        name:"Aaron",
+        age:24
+    },
+    {
+        name:"Jena",
+        age:55
+    },
+];
+
+//ES6 introduced let and const, before we had only var which was nearly meaningless
+const favorite = {
+    name:"Jena",
+    age:55
+};
+
+
+//ERROR if above is const favorite = {}
